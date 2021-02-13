@@ -82,7 +82,7 @@ float getWindSpeed(){
 
   byte dataH = Anemometer_buf[3];
   byte dataL = Anemometer_buf[4];
-  windSpeed = ((dataH << 8) | dataL ) / 100;  //Range data 0~3000 = 0~30m/s
+  windSpeed = ((dataH << 8) | dataL ) / 100.0;  //Range data 0~3000 = 0~30m/s
 
   return windSpeed;
   
